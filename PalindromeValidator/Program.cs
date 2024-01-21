@@ -1,8 +1,5 @@
 using PalindromeValidator;
 
-var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
-
 while (true)
 {
     var inputValue = ReadValue.Read();
@@ -11,5 +8,3 @@ while (true)
     
     PrintResult.Print(result); 
 }
-
-app.Run();
