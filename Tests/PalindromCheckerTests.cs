@@ -2,7 +2,7 @@ using PalindromeValidator;
 using Xunit;
 namespace Tests;
 
-public class PalinromeCheckerTests
+public class PalindromCheckerTests
 {
     private static PalindromChecker checker = new();
 
