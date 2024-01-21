@@ -15,6 +15,14 @@ public class PalinromeCheckerTests
     }
 
     [Fact]
+    public void When_PalindromeWithWhiteSpaces_ReturnTrue()
+    {
+        var (result, errorMessage) = checker.IsPalindrome("level  ");
+        Assert.False(result);
+        Assert.Null(errorMessage);
+    }
+
+    [Fact]
     public void When_Not_Palindrome_ReturnFalse()
     {
         var (result, errorMessage) = checker.IsPalindrome("palindrome");

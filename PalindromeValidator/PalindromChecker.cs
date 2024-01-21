@@ -14,7 +14,7 @@ public class PalindromChecker
             return (false, "Value cannot be more than 12 characters");
         }
 
-        var reversedText = ReverseString(text.ToLower());
+        var reversedText = ReverseString(text.Trim().ToLower());
 
         return (text == reversedText, null);
     }
