@@ -3,11 +3,11 @@ using PalindromeValidator;
 var checker = new PalindromChecker();
 
 var inputValue = Read();
-var (isPalindrome, error) = checker.IsPalindrome(inputValue);
-Write(error ?? GetSuccessMessage(isPalindrome, inputValue));
+var (isPalindrom, error) = checker.IsPalindrome(inputValue);
+Write(error ?? GetSuccessMessage(isPalindrom, inputValue));
 
-string GetSuccessMessage(bool isPalindrome, string value) =>
-    isPalindrome ? $"{value} is palindrom" : $"{value} is not palindrom";
+string GetSuccessMessage(bool isPalindrom, string value) =>
+    isPalindrom ? $"{value} is palindrom" : $"{value} is not palindrom";
 
 string Read()
 {
