@@ -1,8 +1,8 @@
 namespace PalindromeValidator;
 
-public class PrintResult
+public class ConsoleWriter
 {
-    public static void Print(string result)
+    public void Print(string result)
     {
         Console.WriteLine(result);
     }
