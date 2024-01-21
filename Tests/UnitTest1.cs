@@ -4,7 +4,7 @@ namespace Tests;
 public class UnitTest1
 {
     [Fact]
-    public void Add_Palindrome_ReturnTrue()
+    public void When_Palindrome_ReturnTrue()
     { 
         var (result, errorMessage) = PalindromeChecker.isPalindrome("level");
         Assert.True(result);
@@ -12,7 +12,7 @@ public class UnitTest1
     }
     
     [Fact]
-    public void Add_Not_Palindrome_ReturnFalse()
+    public void When_Not_Palindrome_ReturnFalse()
     { 
         var (result, errorMessage) = PalindromeChecker.isPalindrome("palindrome");
         Assert.False(result);
@@ -20,7 +20,7 @@ public class UnitTest1
     }
     
     [Fact]
-    public void Add_Empty_String_ReturnError()
+    public void When_Empty_String_ReturnError()
     { 
         var (result, errorMessage) = PalindromeChecker.isPalindrome("");
         Assert.False(result);
@@ -28,7 +28,7 @@ public class UnitTest1
     }
     
     [Fact]
-    public void Add_More_Than_12_Characters_ReturnError()
+    public void When_More_Than_12_Characters_ReturnError()
     { 
         var (result, errorMessage) = PalindromeChecker.isPalindrome("veryveryverylongstring");
         Assert.False(result);
