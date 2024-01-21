@@ -3,7 +3,7 @@ using PalindromeValidator;
 var checker = new PalindromChecker();
 
 var inputValue = Read();
-var (isPalindrom, error) = checker.IsPalindrome(inputValue);
+var (isPalindrom, error) = checker.IsPalindrom(inputValue);
 Write(error ?? GetSuccessMessage(isPalindrom, inputValue));
 
 string GetSuccessMessage(bool isPalindrom, string value) =>

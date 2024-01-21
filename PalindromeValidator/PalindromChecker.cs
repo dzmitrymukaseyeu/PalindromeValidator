@@ -2,7 +2,7 @@ namespace PalindromeValidator;
 
 public class PalindromChecker
 {
-    public (bool success, string? errorMessage) IsPalindrome(string text)
+    public (bool success, string? errorMessage) IsPalindrom(string text)
     {
         if (string.IsNullOrEmpty(text))
         {
