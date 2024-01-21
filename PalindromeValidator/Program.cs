@@ -7,7 +7,7 @@ var (isPalindrome, error) = checker.IsPalindrome(inputValue);
 Write(error ?? GetSuccessMessage(isPalindrome, inputValue));
 
 string GetSuccessMessage(bool isPalindrome, string value) =>
-    isPalindrome ? $"{value} is palindrome" : $"{value} is not palindrome";
+    isPalindrome ? $"{value} is palindrom" : $"{value} is not palindrom";
 
 string Read()
 {
