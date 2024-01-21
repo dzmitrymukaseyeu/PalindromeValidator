@@ -1,8 +1,8 @@
 namespace PalindromeValidator;
 
-public class ReadValue
+public class ConsoleReader
 {
-    public static string Read()
+    public string Read()
     {
         Console.WriteLine("Enter value:");
         return Console.ReadLine();

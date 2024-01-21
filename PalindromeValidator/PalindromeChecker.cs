@@ -2,7 +2,7 @@ namespace PalindromeValidator;
 
 public class PalindromChecker
 {
-    public static (bool success, string? errorMessage) IsPalindrome(string text)
+    public (bool success, string? errorMessage) IsPalindrome(string text)
     {
         if (string.IsNullOrEmpty(text))
         {
@@ -11,15 +11,15 @@ public class PalindromChecker
 
         if (text.Length > 12)
         {
-            return (false, "Value cannot be more than 12 characters")
-            }
+            return (false, "Value cannot be more than 12 characters");
+        }
 
         var reversedText = ReverseString(text.ToLower());
 
         return (text == reversedText, null);
     }
 
-    private static string ReverseString(string value)
+    private string ReverseString(string value)
     {
         var charArray = value.ToCharArray();
         Array.Reverse(charArray);
