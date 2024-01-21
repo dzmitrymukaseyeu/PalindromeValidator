@@ -5,7 +5,8 @@ var checker = new PalindromChecker();
 var printer = new ConsoleWriter();
 
 var inputValue = reader.Read();
-var (isPalindrome, errorMessage) = checker.IsPalindrome(inputValue);
-var result = errorMessage ?? (isPalindrome ? $"{inputValue} is palindrome" : $"{inputValue} is not palindrome");
+var (isPalindrome, error) = checker.IsPalindrome(inputValue);
+printer.Print(error ?? GetSuccessMessage(isPalindrome, inputValue));
 
-printer.Print(result);
+string GetSuccessMessage(bool isPalindrome, string value) =>
+    isPalindrome ? $"{value} is palindrome" : $"{value} is not palindrome";
