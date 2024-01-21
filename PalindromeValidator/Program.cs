@@ -11,7 +11,7 @@ string GetSuccessMessage(bool isPalindrome, string value) =>
 
 string Read()
 {
-    Console.WriteLine("Enter value:");
+    Console.WriteLine("Enter value: ");
     return Console.ReadLine();
 }
 
