@@ -1,7 +1,7 @@
 using PalindromeValidator;
 namespace Tests;
 
-public class UnitTest1
+public class PalinromeCheckerTests
 {
     private static PalindromChecker checker = new();
 
